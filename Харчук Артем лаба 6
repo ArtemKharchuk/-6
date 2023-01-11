@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+struct Book
+{
+  char title[100]; 
+  char author[100]; 
+  int year;
+  double price; 
+};
+
+void main()
+{
+  Book b;
+  int size = sizeof(b); // size = 216
+  cout << "size = " << size << endl;
+}
